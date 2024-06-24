@@ -1,0 +1,19 @@
+[
+    {
+        "question": "What is your age?",
+        "type": "text",
+        "name": "age"
+    },
+    {
+        "question": "What is your gender?",
+        "type": "radio",
+        "name": "gender",
+        "options": ["Male", "Female", "Other"]
+    },
+    {
+        "question": "What is your highest level of education?",
+        "type": "select",
+        "name": "education",
+        "options": ["High School", "Bachelor's Degree", "Master's Degree", "PhD"]
+    }
+]

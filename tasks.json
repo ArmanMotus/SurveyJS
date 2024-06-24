@@ -1,0 +1,20 @@
+[
+    {
+        "taskSetIndex": 1,
+        "attributes": [
+            "Finding product-market fit for a new product/feature is an ongoing challenge",
+            "It's difficult to get everyone to agree on the product roadmap",
+            "I am stuck working on a product I don't believe in",
+            "Aligning the whole team around a shared mission is difficult"
+        ]
+    },
+    {
+        "taskSetIndex": 2,
+        "attributes": [
+            "Balancing short-term and long-term product goals",
+            "Managing customer expectations",
+            "Integrating with existing systems and processes",
+            "Ensuring product quality and reliability"
+        ]
+    }
+]

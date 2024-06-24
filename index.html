@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="demographic-container" style="display: none;">
+            <h1 id="demographic-question"></h1>
+            <form id="demographic-form">
+                <div id="demographic-input"></div>
+                <button type="button" id="demographic-next-button">Next</button>
+            </form>
+        </div>
+        <div id="maxdiff-container" style="display: none;">
+            <h1>Which of the problems would you say are your highest and lowest priority to address?</h1>
+            <form id="survey-form">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Highest Priority</th>
+                            <th>Problem Statement</th>
+                            <th>Lowest Priority</th>
+                        </tr>
+                    </thead>
+                    <tbody id="survey">
+                        <!-- Survey content will be dynamically inserted here -->
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <span>1/2</span>
+                </div>
+                <button type="button" id="next-button">Next</button>
+                <button type="button" id="submit-button" style="display:none;">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
