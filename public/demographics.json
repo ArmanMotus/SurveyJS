@@ -1,7 +1,7 @@
 [
     {
         "question": "What is your age?",
-        "type": "text",
+        "type": "number",
         "name": "age"
     },
     {
@@ -14,6 +14,6 @@
         "question": "What is your highest level of education?",
         "type": "select",
         "name": "education",
-        "options": ["High School", "Bachelor's Degree", "Master's Degree", "PhD"]
+        "options": ["High School", "Bachelor's", "Master's", "Doctorate"]
     }
 ]
