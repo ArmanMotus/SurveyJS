@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Submitting responses:', responses);
     console.log('Submitting demographic responses:', demographicResponses);
 
-    fetch('/.netlify/functions/submit-survey', {
+    fetch('http://localhost:3000/submit-survey', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
