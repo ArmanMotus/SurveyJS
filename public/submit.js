@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Submitting responses:', responses);
     console.log('Submitting demographic responses:', demographicResponses);
 
-    fetch('https://motustest.netlify.app/submit-survey', { // Update with your Heroku or external server URL
+    fetch('https://motustest.netlify.app/submit-survey', { // Replace with your actual server URL
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
