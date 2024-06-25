@@ -8,12 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
-app.use(cors({
-    origin: '*', // Allow all origins, adjust this as needed
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type']
-}));
+app.use(cors());
 
+// Serve static files from the public directory
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.post('/submit-survey', (req, res) => {

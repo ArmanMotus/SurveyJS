@@ -10,15 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ responses, demographicResponses: [demographicResponses] }),
+        body: JSON.stringify({ responses, demographicResponses: [demographicResponses] }),  // Send demographicResponses as an array
     })
     .then(response => response.json())
     .then(data => {
         console.log('Success:', data);
-        window.location.href = 'review.html';
+        window.location.href = 'thank-you.html';
     })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('There was an issue submitting your responses. Please try again.');
-    });
+    .catch(error => console.error('Error:', error));
 });
