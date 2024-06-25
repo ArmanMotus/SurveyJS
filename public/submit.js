@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Submitting responses:', responses);
     console.log('Submitting demographic responses:', demographicResponses);
 
-    fetch('http://localhost:3000/submit-survey', {
+    fetch('https://master--motustest.netlify.app/submit-survey', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
