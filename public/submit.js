@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Submitting responses:', responses);
     console.log('Submitting demographic responses:', demographicResponses);
 
-    fetch('https://motustest.netlify.app/submit-survey', { // Replace with your actual server URL
+    fetch('https://jsonplaceholder.typicode.com/posts', { // Use JSONPlaceholder for testing
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ responses, demographicResponses: [demographicResponses] }),
+        body: JSON.stringify({ responses, demographicResponses }),
     })
     .then(response => {
         console.log('Response status:', response.status);
