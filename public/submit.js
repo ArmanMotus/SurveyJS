@@ -17,5 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Success:', data);
         window.location.href = 'review.html';
     })
-    .catch(error => console.error('Error:', error));
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an issue submitting your responses. Please try again.');
+    });
 });
