@@ -5,14 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Submitting responses:', responses);
     console.log('Submitting demographic responses:', demographicResponses);
 
-    fetch('http://localhost:3000/submit-survey', {
+    fetch('https://master--motustest.netlify.app/submit-survey', { // Replace with your actual server URL
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({ responses, demographicResponses: [demographicResponses] }),
     })
-    .then(response => response.json())
+    .then(response => {
+        console.log('Response status:', response.status);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         console.log('Success:', data);
         window.location.href = 'review.html';
