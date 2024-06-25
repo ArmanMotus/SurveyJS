@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const responses = JSON.parse(localStorage.getItem('responses'));
     const demographicResponses = JSON.parse(localStorage.getItem('demographicResponses'));
 
-    console.log('Loading review page with responses:', responses);
-    console.log('Loading review page with demographic responses:', demographicResponses);
-
     if (responses) {
         const responseHeading = document.createElement('h2');
         responseHeading.textContent = 'Survey Responses';
